@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700;800;900&display=fallback');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+@import 'additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+  display: none;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.timeline-content {
+  margin-left: 60px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.timeline-content.left {
+  margin-left: 400px;
+}
+
+.test {
+  display: flex;
+  text-align: center;
+  /* alinea horizontalmente */
+  align-items: center;
+  /* alinea verticalmente */
+  justify-content: center;
+  /* alinea verticalmente */
+}
+
+.img-thumbnail {
+  height: 40%;
+  width: 40%;
+
+}
+
+.timeline-content.right {
+  margin-left: auto;
+  margin-right: 60px;
+}
+.navbar{
+  margin: 0 auto;
+display: flex;
+ justify-content: center;
+}
+.nav-link{
+  margin-right: 5%;
+  font-weight: bold;
+
+}
+
+

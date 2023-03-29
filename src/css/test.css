@@ -1,0 +1,41 @@
+body #light {
+    background-color: #f3ebf6;
+    color: black;
+
+}
+
+body #dark {
+    background-color: #131114;
+    color: aliceblue;
+}
+
+body #light p{
+    color: black;
+}
+#light {
+    background-color: #fff;
+}
+
+#dark {
+    background-color: #170e1b;
+}
+.App{
+    align-content: center;
+    justify-content: space-between;
+}
+
+.switch {
+    display: flex;
+    height: 5rem;
+    padding: 20px;
+    max-width: 40px;
+    max-height: 30px;
+}
+
+.flex.flex-col.min-h-screen.overflow-hidden{
+    margin: 0;
+
+}
+.div.react-switch-bg {
+    background: aqua;
+}
