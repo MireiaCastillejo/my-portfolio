@@ -56,8 +56,6 @@ function Header() {
               </svg>
             </Link>
           </div>
-
-    
         </div>
       </div>
     </header>

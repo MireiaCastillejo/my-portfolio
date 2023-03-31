@@ -39,3 +39,8 @@ body #light p{
 .div.react-switch-bg {
     background: aqua;
 }
+.rounded {
+    border-radius: 20%;
+    width: 20%;
+    height: 20%;
+  }

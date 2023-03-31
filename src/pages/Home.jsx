@@ -11,6 +11,7 @@ import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
+import Academic from '../partials/Academic';
 
 export const ThemeContext = createContext(null);
 
@@ -42,6 +43,7 @@ function Home() {
           <HeroHome />
           <FeaturesBlocks />
           <FeaturesZigZag />
+          <Academic/>
           <Newsletter />
         </main>
 
