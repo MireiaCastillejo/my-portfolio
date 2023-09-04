@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef} from 'react';
 import emailjs from 'emailjs-com';
 
 function Newsletter() {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [mensaje, setMensaje] = useState('');
+  const form = useRef();
+
   const enviarCorreo = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_j07tcwi', 'template_6awfmzb', e.target, 'sUXzJY6gInqPq9Z_i')
+    emailjs.sendForm('service_j07tcwi', 'template_6awfmzb',e.target, 'sUXzJY6gInqPq9Z_i')
       .then((resultado) => {
-        console.log(resultado.text);
         alert('¡El correo electrónico ha sido enviado correctamente!');
+        setNombre('');
+        setEmail('');
+        setMensaje('');
       }, (error) => {
-        console.log(error.text);
         alert('¡Error al enviar el correo electrónico!');
       });
-
-    setNombre('');
-    setEmail('');
-    setMensaje('');
   };
   return (
     <section id="section3">
@@ -46,24 +44,22 @@ function Newsletter() {
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
               <h3 className="h3 text-white mb-2">Contact me</h3>
-              <p className="text-purple-200 text-lg">Contact me </p>
             </div>
 
             {/* CTA form */}
-
-            <form className="w-full lg:w-4/2" onSubmit={enviarCorreo}>
+            <form ref={form} className="w-full lg:w-4/2" onSubmit={enviarCorreo}>
 
               <div>
                 <label htmlFor="nombre">Nombre:</label>
-                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" type="text" id="nombre" name="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" type="text" id="nombre" name="user_name" value={nombre} onChange={(e) => setNombre(e.target.value)} />
               </div>
               <div>
                 <label htmlFor="email">Correo electrónico:</label>
-                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" type="email" id="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} />
               </div>
               <div>
                 <label htmlFor="mensaje">Mensaje:</label>
-                <textarea className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-3 py-3 mb-2 sm:mb-0 sm:mr-1 text-white placeholder-purple-400" placeholder="Explain me something…" aria-label="Your best email…" id="mensaje" name="mensaje" value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
+                <textarea className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-3 py-3 mb-2 sm:mb-0 sm:mr-1 text-white placeholder-purple-400" placeholder="Explain me something…" aria-label="Your best email…" id="mensaje" type="submit" name="message" value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
               </div>
               <button type="submit" className="btn text-purple-600 bg-purple-100 hover:bg-white shadow mt-3">Send</button>
               {/* Success message */}
