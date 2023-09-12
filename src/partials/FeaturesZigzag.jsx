@@ -1,13 +1,9 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBContainer } from "mdb-react-ui-kit";
 
-import FeatImage01 from '../images/nttdata.png';
-import FeatImage02 from '../images/at.webp';
-import FeatImage03 from '../images/tealium.png';
 
 function FeaturesZigzag() {
   return (
-    <section id="section2">
+    <section id="section3">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-gray-800">
           {/* Section header */}

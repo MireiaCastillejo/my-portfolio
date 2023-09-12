@@ -20,7 +20,7 @@ function Newsletter() {
       });
   };
   return (
-    <section id="section3">
+    <section id="section5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* CTA box */}
@@ -51,15 +51,15 @@ function Newsletter() {
 
               <div>
                 <label htmlFor="nombre">Nombre:</label>
-                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" type="text" id="nombre" name="user_name" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your name" aria-label="Your name" type="text" id="nombre" name="user_name" value={nombre} onChange={(e) => setNombre(e.target.value)} />
               </div>
               <div>
                 <label htmlFor="email">Correo electrónico:</label>
-                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" type="email" id="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-3 text-white placeholder-purple-400" placeholder="Your email" aria-label="Your best email…" type="email" id="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} />
               </div>
               <div>
                 <label htmlFor="mensaje">Mensaje:</label>
-                <textarea className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-3 py-3 mb-2 sm:mb-0 sm:mr-1 text-white placeholder-purple-400" placeholder="Explain me something…" aria-label="Your best email…" id="mensaje" type="submit" name="message" value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
+                <textarea className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-3 py-3 mb-2 sm:mb-0 sm:mr-1 text-white placeholder-purple-400" placeholder="Explain me something…" aria-label="Your message" id="mensaje" type="submit" name="message" value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
               </div>
               <button type="submit" className="btn text-purple-600 bg-purple-100 hover:bg-white shadow mt-3">Send</button>
               {/* Success message */}

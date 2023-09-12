@@ -45,6 +45,7 @@ function Header() {
               <NavLink href="#section1">ME</NavLink>
               <NavLink href="#section2">SKILLS</NavLink>
               <NavLink href="#section3">EXPERIENCE</NavLink>
+              <NavLink href="#section4">EDUCATION</NavLink>
             </Nav>
           </Navbar>
           {/* Site branding */}

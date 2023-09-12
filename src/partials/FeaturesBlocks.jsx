@@ -5,12 +5,15 @@ import node from '../images/node.png';
 import react from '../images/react.png';
 import css from '../images/css.png';
 import php from '../images/php.png';
+import target from '../images/target.png';
+import analytics from '../images/analytics.png';
+import tealium from '../images/tealium2.png';
 
 
 
 function FeaturesBlocks() {
   return (
-    <section>
+    <section id="section2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
 
@@ -50,6 +53,21 @@ function FeaturesBlocks() {
             {/* 6th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
               <img className="rounded" src={php} />
+            </div>
+
+             {/* 7th item */}
+             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
+              <img className="rounded" src={target} />
+            </div>
+
+             {/* 8th item */}
+             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
+              <img className="rounded" width={40} src={tealium} />
+            </div>
+
+             {/* 8th item */}
+             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
+              <img className="rounded" width={40} src={analytics} />
             </div>
           </div>
         </div>
