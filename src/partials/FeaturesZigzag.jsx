@@ -13,7 +13,8 @@ function FeaturesZigzag() {
           {/* Items */}
           <div className="timeline grid gap-20">
             {/* 1st item */}
-            <div className="event timeline-item-left" data-date="2019">
+            <div className="event timeline-item-left" data-date="Today">
+
               {/* Content */}
               <div className="timeline-content right max-w-xl md:max-w-none md:w-full mx-auto" data-aos="fade-right">
                 <h3 className="h3 mb-3">Engineer</h3>
@@ -42,7 +43,7 @@ function FeaturesZigzag() {
             </div>
             {/* 2nd item */}
 
-            <div className=" event timeline-item-left" data-date="2019">
+            <div className=" event timeline-item-left" data-date="2020">
               <div className="timeline-icon"></div>
 
               {/* Content */}
