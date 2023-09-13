@@ -9,7 +9,8 @@ function Newsletter() {
 
   const enviarCorreo = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_j07tcwi', 'template_6awfmzb',e.target, 'sUXzJY6gInqPq9Z_i')
+     if (nombre && email && mensaje) {
+      emailjs.sendForm('service_j07tcwi', 'template_6awfmzb',e.target, 'sUXzJY6gInqPq9Z_i')
       .then((resultado) => {
         alert('¡El correo electrónico ha sido enviado correctamente!');
         setNombre('');
@@ -18,6 +19,13 @@ function Newsletter() {
       }, (error) => {
         alert('¡Error al enviar el correo electrónico!');
       });
+    } else {
+      <div class="alert alert-warning" role="alert">
+  This is a warning alert—check it out!
+</div>
+      alert('Por favor, completa todos los campos.');
+    }
+   
   };
   return (
     <section id="section5">
