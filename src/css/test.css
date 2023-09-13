@@ -3,7 +3,37 @@ body #light {
     color: black;
 
 }
+ body #light div.h-full > blockquote {
+    color: #131114;
+}
 
+body #dark div.h-full >  blockquote {
+    color: aliceblue;
+}
+
+body #light div.timeline-content > ul > li > span{
+    color: #131114;
+}
+
+body #dark div.timeline-content > ul > li > span{
+    color: aliceblue;
+}
+
+body #light div.event > div > div > ul > li > span{
+    color: #131114;
+}
+
+body #dark div.event > div > div > ul > li > span{
+    color: aliceblue;
+}
+
+body #light div.h-full > div > cite {
+    color: #131114;
+}
+
+body #dark div.h-full > div > cite {
+    color: aliceblue;
+}
 body #dark {
     background-color: #131114;
     color: aliceblue;

@@ -11,21 +11,14 @@ function Newsletter() {
   const [isClicked, setIsClicked] = useState(false);
   const handleClick = () => {
     setIsClicked(true);
-
-    // Puedes agregar alguna lógica adicional aquí si es necesario.
-
-
   };
 
   const handleEnviarFormulario = () => {
-    // Realiza el procesamiento del formulario aquí
 
-    // Muestra la alerta al completar el envío
     setEstadoAlerta(1);
   };
 
   const handleCerrarAlerta = () => {
-    // Cierra la alerta manualmente
     setEstadoAlerta(0);
   };
 
@@ -89,7 +82,7 @@ function Newsletter() {
                 <textarea className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-3 py-3 mb-2 sm:mb-0 sm:mr-1 text-white placeholder-purple-400" placeholder="Explain me something…" aria-label="Your message" id="mensaje" type="submit" name="message" value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
               </div>
       
-              <button type="submit" className={`btn text-purple-600 bg-purple-100 hover:lg-red shadow mt-3 transform ${
+              <button type="submit" className={`btn text-purple-600 bg-purple-100 hover:scale-105 shadow mt-3  transform ${
     isClicked ? 'scale-95 transition-transform' : 'scale-100 transition-transform'
   } mx-4 flex`}
       onClick={handleClick}>Send</button>

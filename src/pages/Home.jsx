@@ -5,14 +5,12 @@ import ReactSwitch from "react-switch";
 import "../css/test.css";
 
 import Header from '../partials/Header';
-import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
 import Academic from '../partials/Academic';
-import Alert from '../partials/Alert'
 
 export const ThemeContext = createContext(null);
 

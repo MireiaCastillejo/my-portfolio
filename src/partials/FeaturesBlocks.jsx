@@ -62,12 +62,12 @@ function FeaturesBlocks() {
 
              {/* 8th item */}
              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" width={40} src={tealium} />
+              <img className="rounded"  src={tealium} />
             </div>
 
              {/* 8th item */}
              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" width={40} src={analytics} />
+              <img className="rounded"  src={analytics} />
             </div>
           </div>
         </div>
