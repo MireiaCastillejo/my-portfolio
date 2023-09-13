@@ -25,7 +25,7 @@ function Academic() {
 
                                 </div>
                             </div>
-                            <h4 className="h4 mb-4">MÁSTER UNIVERSITARIO EN PROGRAMACIÓN WEB DE ALTO</h4>
+                            <h4 className="h4 mb-4">MÁSTER UNIVERSITARIO EN PROGRAMACIÓN WEB DE ALTO RENDIMIENTO</h4>
 
                             <blockquote className="text-lg text-gray-400 grow">Universitat Ramon Llull</blockquote>
                             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
