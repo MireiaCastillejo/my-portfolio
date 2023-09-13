@@ -12,6 +12,7 @@ import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
 import Academic from '../partials/Academic';
+import Alert from '../partials/Alert'
 
 export const ThemeContext = createContext(null);
 

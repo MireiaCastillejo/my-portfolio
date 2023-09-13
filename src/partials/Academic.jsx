@@ -3,6 +3,7 @@ import React from 'react';
 import lasalle from '../images/salle.jpg';
 
 function Academic() {
+
     return (
         <section id="section4">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">

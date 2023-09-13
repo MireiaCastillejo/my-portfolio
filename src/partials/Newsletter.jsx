@@ -1,39 +1,58 @@
-import React, { useState, useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Alert from './Alert'; // Asegúrate de que la ruta sea correcta
 
 function Newsletter() {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [mensaje, setMensaje] = useState('');
   const form = useRef();
+  const [estadoAlerta, setEstadoAlerta] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
+  const handleClick = () => {
+    setIsClicked(true);
+
+    // Puedes agregar alguna lógica adicional aquí si es necesario.
+
+
+  };
+
+  const handleEnviarFormulario = () => {
+    // Realiza el procesamiento del formulario aquí
+
+    // Muestra la alerta al completar el envío
+    setEstadoAlerta(1);
+  };
+
+  const handleCerrarAlerta = () => {
+    // Cierra la alerta manualmente
+    setEstadoAlerta(0);
+  };
 
   const enviarCorreo = (e) => {
     e.preventDefault();
-     if (nombre && email && mensaje) {
-      emailjs.sendForm('service_j07tcwi', 'template_6awfmzb',e.target, 'sUXzJY6gInqPq9Z_i')
-      .then((resultado) => {
-        alert('¡El correo electrónico ha sido enviado correctamente!');
-        setNombre('');
-        setEmail('');
-        setMensaje('');
-      }, (error) => {
-        alert('¡Error al enviar el correo electrónico!');
-      });
+    if (nombre && email && mensaje) {
+      emailjs.sendForm('service_j07tcwi', 'template_6awfmzb', e.target, 'sUXzJY6gInqPq9Z_i')
+        .then((resultado) => {
+          handleEnviarFormulario()
+          setNombre('');
+          setEmail('');
+          setMensaje('');
+        }, (error) => {
+          alert('¡Error al enviar el correo electrónico!');
+        });
     } else {
-      <div class="alert alert-warning" role="alert">
-  This is a warning alert—check it out!
-</div>
       alert('Por favor, completa todos los campos.');
     }
-   
+
   };
   return (
     <section id="section5">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
+      <Alert estado={estadoAlerta} onCerrar={handleCerrarAlerta} ></Alert>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* CTA box */}
         <div className="relative bg-purple-600 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
-
           {/* Background illustration */}
           <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
             <svg width="238" height="110" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,15 +88,20 @@ function Newsletter() {
                 <label htmlFor="mensaje">Mensaje:</label>
                 <textarea className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-3 py-3 mb-2 sm:mb-0 sm:mr-1 text-white placeholder-purple-400" placeholder="Explain me something…" aria-label="Your message" id="mensaje" type="submit" name="message" value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
               </div>
-              <button type="submit" className="btn text-purple-600 bg-purple-100 hover:bg-white shadow mt-3">Send</button>
+      
+              <button type="submit" className={`btn text-purple-600 bg-purple-100 hover:lg-red shadow mt-3 transform ${
+    isClicked ? 'scale-95 transition-transform' : 'scale-100 transition-transform'
+  } mx-4 flex`}
+      onClick={handleClick}>Send</button>
+
               {/* Success message */}
               {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
             </form>
 
+
           </div>
 
         </div>
-
       </div>
     </section>
   );

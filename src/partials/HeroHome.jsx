@@ -8,7 +8,7 @@ import ExamplePdf from '../document/Mireia Castillejo Gonzalez CV.pdf';
 function HeroHome() {
 
   return (
-    
+
     <section id="section1">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -41,8 +41,8 @@ function HeroHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">
-              Mireia Castillejo            </h1>
-            <div className="test">              <img className="img-thumbnail" src={HeroImage} />
+              Mireia Castillejo </h1>
+            <div className="test"> <img className="img-thumbnail" src={HeroImage} />
             </div>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
               As a dedicated software developer, I am committed to delivering effective solutions through programming. I have experience in various programming languages and am constantly expanding my knowledge base to incorporate new technologies.
