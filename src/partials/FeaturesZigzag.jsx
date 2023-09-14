@@ -24,19 +24,19 @@ function FeaturesZigzag() {
                     <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Implementing Technical implementation of tagging </span>
+                    <span><b>Adobe Analytics Dashboard:</b> I design and generate informative dashboards in Adobe Analytics, providing actionable insights for decision-makers. </span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Create Test A/B and personalizations with Adobe Target </span>
+                    <span><b>Tealium Tagging:</b> I ensure projects are properly tagged for data tracking and analysis using Tealium. </span>
                   </li>
                   <li className="flex items-center">
                     <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Juggling multiple projects simultaneously</span>
+                    <span><b>Adobe Target:</b> I create and configure Adobe Target experiments, including A/B tests, personalizations, and recommendation</span>
                   </li>
                 </ul>
               </div>
@@ -56,19 +56,19 @@ function FeaturesZigzag() {
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Using Tealium IQ tag Management</span>
+                      <span><b>Tealium Assistant:</b> I assist with Tealium tagging for Adobe Analytics data analysis, focusing on foundational data collection.</span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Using Analytics tools to create report</span>
+                      <span><b>Data Analysis:</b> I contribute to basic data analysis and the creation of simple Adobe Analytics dashboards.</span>
                     </li>
                     <li className="flex items-center">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Developing an extension using JavaScript</span>
+                      <span><b>Dashboard Creator:</b> I work on basic Adobe Analytics dashboards, gaining experience in data visualization.</span>
                     </li>
                   </ul>
                 </div>
@@ -88,19 +88,19 @@ function FeaturesZigzag() {
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Validating tagging guide</span>
+                      <span><b>Validating Tagging Guide: </b>I meticulously validate and refine tagging guidelines to ensure accurate data collection.</span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Using Adobe Analytcs to evaluate the value</span>
+                      <span><b>Using Adobe Analytics: </b>I use Adobe Analytics to assess the value of digital initiatives and gather insights for data-driven decisions.</span>
                     </li>
                     <li className="flex items-center">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Agile methodologies</span>
+                      <span><b>Agile Methodologies:</b> I actively engage in Agile practices for efficient project development and collaboration.</span>
                     </li>
                   </ul>
                 </div>
