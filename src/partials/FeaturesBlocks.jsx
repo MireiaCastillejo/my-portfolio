@@ -26,48 +26,48 @@ function FeaturesBlocks() {
           <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
 
             {/* 1st item */}
-            <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" src={html} />
+            <div className="relative flex flex-col items-center " data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out " src={html} />
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" src={css} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out" src={css} />
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" src={js} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out" src={js} />
             </div>
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" src={react} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out" src={react} />
             </div>
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" src={node} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out" src={node} />
             </div>
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" src={php} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out" src={php} />
             </div>
 
              {/* 7th item */}
              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded" src={target} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out" src={target} />
             </div>
 
              {/* 8th item */}
              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded"  src={tealium} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out"  src={tealium} />
             </div>
 
              {/* 8th item */}
              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
-              <img className="rounded"  src={analytics} />
+              <img className="rounded hover:scale-125 transition duration-700 ease-in-out"  src={analytics} />
             </div>
           </div>
         </div>
